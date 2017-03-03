@@ -33,7 +33,12 @@
 				<ul id="topNavRight">
 					<li><a href="" title="Sign Up" id="signIn">SIGN UP</a></li>
 					<li><a href="?page=login" title="Log In" id="logIn">LOG IN</a></li>
-					<li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+					<li>
+						<form>
+		    				<input id="search" type="search" name="search" />
+							<p></p>
+						</form>
+					</li>
 				</ul>
 			</nav>
 		</div>

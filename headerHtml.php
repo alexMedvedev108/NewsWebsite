@@ -45,9 +45,9 @@
 		<div id="subHeader">
 			<nav>	
 				<ul id="bottomNav">
-					<li><a href="http://localhost/NewsCopy/?page=politics" class="selected" >politics</a></li>
-					<li><a href="http://localhost/NewsCopy/?page=technology">technology</a></li>
-					<li><a href="http://localhost/NewsCopy/?page=sport">sport</a></li>
+					<li><a href="http://localhost/NewsWebsite/?page=politics" class="selected" >politics</a></li>
+					<li><a href="http://localhost/NewsWebsite/?page=technology">technology</a></li>
+					<li><a href="http://localhost/NewsWebsite/?page=sport">sport</a></li>
 					<li><a href="">business</a></li>
 					<li><a href="">entertainment</a></li>
 					<li><a href="">other</a></li>

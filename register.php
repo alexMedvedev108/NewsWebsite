@@ -1,9 +1,8 @@
 <?php 
 	defined('PI') or die('404 mozAk');
 ?>
-<script>document.title = 'Login'</script>
 
-<form action="./?page=login" method="post">
+<form action="./?page=register" method="post">
 	<div class="input-group">
 		<label for="username">Username</label>
 		<input type="text" id="username" name="username" value="<?php echo isset($_POST['username']) ? $_POST['username'] : ''?>" />
@@ -15,7 +14,7 @@
 	</div>
 
 	<div class="input-group">
-		<input type="submit" name="submit" value="Login" />
+		<input type="submit" name="submit" value="Register" />
 	</div>
 </form>
 
@@ -45,23 +44,18 @@ if (isset($_POST['submit'])) {
 			while (!feof($file)) {
 				$line = explode("|||", fgets($file));
 
-				if (strcasecmp($username, $line[0]) == 0 && strcasecmp($password, $line[1]) == 0) {
+				if (strcasecmp($username, $line[0]) == 0) {
 					$found = true;
-					$admin = $line[2];
 					break;
 				}
 			}
 
 			if ($found) {
-				$_SESSION['user'] = $username;
-				$_SESSION['admin'] = $admin;
-				if ($admin == 0) {
-					header('Location: ./');
-				} else {
-					header('Location: ./?page=admin');
-				}
+				$error[] = "Already registered";
 			} else {
-				$error[] = "User not found";
+				fwrite($file, implode("|||", array($username, $password, 0)).PHP_EOL);
+				header('Location: ./');
+				$_SESSION['user'] = $username;
 			}
 			fclose($file);
 		}
@@ -71,9 +65,5 @@ if (isset($_POST['submit'])) {
 		}
 
 	}
-	
 }
-
-
-
 ?>

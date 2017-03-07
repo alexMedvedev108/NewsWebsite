@@ -31,9 +31,18 @@
 					</h1>
 				</div>
 				<ul id="topNavRight">
-					<li><a href="" title="Sign Up" id="signIn">SIGN UP</a></li>
-					<li><a href="?page=login" title="Log In" id="logIn">LOG IN</a></li>
-					<li>
+				
+				<?php if ($_SESSION['user']) { 			
+
+					echo ($_SESSION['admin'] == 1) ? '<a href="./?page=admin">Admin</a>' : 'Hello, '. $_SESSION['user'];
+
+				?>	
+					<li><a href="./?page=logout">Logout</a><li>
+				<?php } else { ?>
+					<li><a href="./?page=login">Login</a><li>
+					<li><a href="./?page=register">Sign Up</a><li>
+				<?php } ?>
+				
 						<form>
 		    				<input id="search" type="search" name="search" />
 							<p></p>

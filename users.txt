@@ -1,0 +1,11 @@
+user1|||parolata|||0
+user2|||parolata|||1
+user3|||parolata|||0
+user4|||parolata|||1
+user5|||parolata|||0
+user6|||parolata|||0
+name|||password|||0
+opa|||parola|||0
+sadsadasda|||dasdadadasdada|||0
+
+user22|||parolata123|||0

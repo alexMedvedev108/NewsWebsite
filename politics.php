@@ -38,7 +38,7 @@
 				<div class="carousel-caption">
 					<?php echo '<h3>' . $infoAndArticlesArr0 ['articles'] [2] ['title'] . '<h3/>';?>
 					<div class="carBut">
-						<a class="btn btn-theme btn-sm btn-min-block" href="<?= $infoAndArticlesArr0 ['articles'] [1] ['url']; ?>">Learn
+						<a class="btn btn-theme btn-sm btn-min-block" href="<?= $infoAndArticlesArr0 ['articles'] [2] ['url']; ?>">Learn
 							more</a> 
 					</div>
 				</div>
@@ -48,7 +48,7 @@
 				<div class="carousel-caption">
 					<?php echo '<h3>' . $infoAndArticlesArr0 ['articles'] [3] ['title'] . '<h3/>';?>
 					<div class="carBut">
-						<a class="btn btn-theme btn-sm btn-min-block" href="<?= $infoAndArticlesArr0 ['articles'] [1] ['url']; ?>">Learn
+						<a class="btn btn-theme btn-sm btn-min-block" href="<?= $infoAndArticlesArr0 ['articles'] [3] ['url']; ?>">Learn
 							more</a> 
 					</div>
 				</div>
@@ -58,7 +58,7 @@
 				<div class="carousel-caption">
 				<?php echo '<h3>' . $infoAndArticlesArr0 ['articles'] [4] ['title'] . '<h3/>';?>
 					<div class="carBut">
-						<a class="btn btn-theme btn-sm btn-min-block" href="<?= $infoAndArticlesArr0 ['articles'] [1] ['url']; ?>">Learn
+						<a class="btn btn-theme btn-sm btn-min-block" href="<?= $infoAndArticlesArr0 ['articles'] [4] ['url']; ?>">Learn
 							more</a> 
 					</div>
 				</div>

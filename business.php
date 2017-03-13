@@ -1,16 +1,16 @@
 
-<script>document.title = 'Sport'</script>
+<script>document.title = 'Business'</script>
 
 <div id="mainCarousel">
-	<!-------------------------------------------------------------
+<!-------------------------------------------------------------
 MAIN:CAROUSEL
 -------------------------------------------------------------->
 
-	<div id="carousel-example-generic" class="carousel slide"
+<div id="carousel-example-generic" class="carousel slide"
 		data-ride="carousel">
 		<?php
-			$urlArticles0 = file_get_contents ( 'https://newsapi.org/v1/articles?source=espn&sortBy=top&apiKey=82bd472141f34d36ba85c5389ff1fc16' );
-			$infoAndArticlesArr0 = json_decode ( $urlArticles0, true );			
+		$urlArticles0 = file_get_contents ( 'https://newsapi.org/v1/articles?source=business-insider&sortBy=top&apiKey=82bd472141f34d36ba85c5389ff1fc16' );
+		$infoAndArticlesArr0 = json_decode ( $urlArticles0, true );
 		?>
 		<!-- Indicators -->
 		<ol class="carousel-indicators">
@@ -82,7 +82,7 @@ MAIN:CAROUSEL
 			<h1>Latest articles</h1>
 			<hr />
 				<?php
-				$urlArticles = file_get_contents ( 'https://newsapi.org/v1/articles?source=espn&sortBy=top&apiKey=82bd472141f34d36ba85c5389ff1fc16' );
+				$urlArticles = file_get_contents ( 'https://newsapi.org/v1/articles?source=business-insider-uk&sortBy=top&apiKey=82bd472141f34d36ba85c5389ff1fc16' );
 				$infoAndArticlesArr = json_decode ( $urlArticles, true );
 				
 				for($ind = 0; $ind < count ( $infoAndArticlesArr ['articles'] ); $ind ++) {
@@ -111,7 +111,7 @@ MAIN:CAROUSEL
 		<div id="asideDiv">
 			<ul>
             	<?php
-					$urlArticles2 = file_get_contents ( 'https://newsapi.org/v1/articles?source=fox-sports&sortBy=top&apiKey=82bd472141f34d36ba85c5389ff1fc16' );
+					$urlArticles2 = file_get_contents ( 'https://newsapi.org/v1/articles?source=financial-times&sortBy=top&apiKey=82bd472141f34d36ba85c5389ff1fc16' );
 					$infoAndArticlesArr2 = json_decode ( $urlArticles2, true );
 					
 					for($ind = 0; $ind < 8; $ind ++) {
@@ -141,7 +141,7 @@ MAIN:CAROUSEL
 			<h1>More articles</h1>
 			<hr />
 				<?php
-					$urlArticles3 = file_get_contents ( 'https://newsapi.org/v1/articles?source=nfl-news&sortBy=top&apiKey=82bd472141f34d36ba85c5389ff1fc16' );
+					$urlArticles3 = file_get_contents ( 'https://newsapi.org/v1/articles?source=the-economist&sortBy=top&apiKey=82bd472141f34d36ba85c5389ff1fc16' );
 					$infoAndArticlesArr3 = json_decode ( $urlArticles3, true );
 					
 					for($ind = 0; $ind < 8; $ind ++) {
@@ -161,7 +161,7 @@ MAIN:CAROUSEL
 						echo '</div>';
 					}
 					
-					$urlArticles4 = file_get_contents ( 'https://newsapi.org/v1/articles?source=talksport&sortBy=top&apiKey=82bd472141f34d36ba85c5389ff1fc16' );
+					$urlArticles4 = file_get_contents ( 'https://newsapi.org/v1/articles?source=the-wall-street-journal&sortBy=top&apiKey=82bd472141f34d36ba85c5389ff1fc16' );
 					$infoAndArticlesArr4 = json_decode ( $urlArticles4, true );
 					
 					for($ind = 0; $ind < 8; $ind ++) {

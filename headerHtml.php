@@ -16,7 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="./CSS/main.css">
 </head>
 <body>
-
+	<div class="content">
 	<header>
 		<div id="mainHeader">
 			<nav>
@@ -32,17 +32,20 @@
 				</div>
 				<ul id="topNavRight">
 				
-				<?php if ($_SESSION['user']) { 			
-
-					echo ($_SESSION['admin'] == 1) ? '<a href="./?page=admin">Admin</a>' : 'Hello, '. $_SESSION['user'];
-
+				<?php 
+					if ($_SESSION['user']) { 			
+						echo ($_SESSION['admin'] == 1) ? '<a href="./?page=admin">Admin</a>' : "<li><span id='greet'>Hello, " . $_SESSION['user'] . "!</span></li>";
 				?>	
-					<li><a href="./?page=logout">Logout</a><li>
-				<?php } else { ?>
-					<li><a href="./?page=login">Login</a><li>
-					<li><a href="./?page=register">Sign Up</a><li>
-				<?php } ?>
-				
+					<li><a href="./?page=logout" title="Logout" id="logOut">Logout</a></li>
+				<?php 
+					} else { 
+				?>
+					<li><a href="./?page=register" title="Sign Up" id="signIn">Sign Up</a></li>
+					<li><a href="./?page=login" title="Log In" id="logIn">Login</a></li>
+				<?php 
+					} 
+				?>
+					<li>
 						<form>
 		    				<input id="search" type="search" name="search" />
 							<p></p>
@@ -57,14 +60,13 @@
 					<li><a href="http://localhost/NewsWebsite/?page=politics" class="selected" >politics</a></li>
 					<li><a href="http://localhost/NewsWebsite/?page=technology">technology</a></li>
 					<li><a href="http://localhost/NewsWebsite/?page=sport">sport</a></li>
-					<li><a href="">business</a></li>
-					<li><a href="">entertainment</a></li>
+					<li><a href="http://localhost/NewsWebsite/?page=business">business</a></li>
+					<li><a href="http://localhost/NewsWebsite/?page=entertainment">entertainment</a></li>
 					<li><a href="">other</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
-	
 	
 
 

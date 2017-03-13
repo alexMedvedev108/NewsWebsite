@@ -31,7 +31,9 @@ a:hover {
 	color: #900003;
 }
 
-
+hr {
+	 background-color: red;
+}
 
 
 
@@ -96,7 +98,7 @@ HEADER
 	margin: 0;
 	padding: 0%;
 	
-	/*border: 1px solid orange;*/
+	/*border: 1px solid pink;*/
 }
 
 #topNavLeft li, #topNavRight li {
@@ -135,7 +137,6 @@ HEADER
 
 #topNavRight li:nth-child(3) {
 	text-align: left;
-
 }
 
 #topNavLeft li a:hover, #topNavLeft li a.selected, #topNavRight li a:hover, #topNavRight li a.selected {
@@ -151,8 +152,8 @@ HEADER
 	width: 100%;
 	background: #1f2324;
 	padding: 1%;
-	margin-top: 0.5%;
-	margin-bottom: 0.1%;
+	margin-top: 0.45%;
+	margin-bottom: 0.2%;
 }
 
 #bottomNav li {
@@ -176,28 +177,24 @@ HEADER
 	
 } 
 
-#logIn {
+#logIn, #signIn, #logOut {
 	padding: 6%;
 	border: 2px solid white;
 	border-radius: 10px;
 	
 }
 
-#logIn:hover {
+#logIn:hover, #signIn:hover, #logOut:hover {
 	border: 3px solid rgba(144, 0, 3, .5);
 	font-weight: bold;
 }
 
-#signIn {
-	padding: 6%;
-	border: 2px solid white;
-	border-radius: 10px;
-	
-}
-
-#signIn:hover {
-	border: 3px solid rgba(144, 0, 3, .5);
-	font-weight: bold;
+#greet {
+	margin: 6%;
+	padding-bottom: 1%;
+	color: white;
+ 	border-bottom: 0.1em solid rgba(255, 255, 255, .7);
+ 	font-weight: bold;
 }
 
 /*******************************************************Search*/
@@ -206,7 +203,8 @@ nav ul li form: hover {
 }
 
 input[type="search"] {
-	background-color: #ffae00;;
+	background-color: #ffae00;
+
 }
 
 input[type="search"]:focus  {
@@ -243,14 +241,6 @@ form {
     border-color: #900003;
     outline: none;
     width: 180px;
-    
-    -moz-transition: all .2s ease-in-out;  
-    -webkit-transition: all .2s ease-in-out;
-}
-
-#search.searching {
-    margin-left: 80px;
-    width: 10px;
     
     -moz-transition: all .2s ease-in-out;  
     -webkit-transition: all .2s ease-in-out;
@@ -372,7 +362,7 @@ MAIN: EXCEPT CAROUSEL
 
 #mainExceptCarousel {
 	display: inline-block;
-	width: 100%
+	width: 100%;
 }
 
 
@@ -554,11 +544,13 @@ MAIN: MAIN SECTION BOTTOM
 FOOTER
 ******************************************************/
 
+
 .footerContainer {
 	background: #1f2324;
 	display: inline-block;
 	width: 100%;
 	padding: 3% 0 5% 0;
+	height: 150px;
 }
 
 .social, .footerInfo, .copyright {
@@ -601,3 +593,8 @@ FOOTER
 	float: right;
 	margin-right: 5%;
 }
+
+.content {
+  min-height: calc(100vh - 70px);
+}
+

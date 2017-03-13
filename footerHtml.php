@@ -1,3 +1,4 @@
+		</div>
 		<footer>
 			<div class="footerContainer">
 				<div class="copyright">

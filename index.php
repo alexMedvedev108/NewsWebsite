@@ -15,7 +15,7 @@
 	
 	
 	if ( isset($_GET['page']) ){
-		$page = $_GET['page'];
+		//$page = $_GET['page'];
 		$file = "./" . $_GET['page'] . ".php";
 		
 		if ( file_exists ($file) ) {

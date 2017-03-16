@@ -1,5 +1,5 @@
 <?php 
-	defined('PI') or die('404 mozAk');
+	defined('PI') or die('<img style="width: 100%" src="./assets/imgs/404.png" alt="" />');
 	if (!isset($_GET['statiq'])) {
 		die('404 mozAk');
 	}

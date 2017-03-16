@@ -5,8 +5,8 @@ user4|||parolata|||1
 user5|||parolata|||0
 user6|||parolata|||0
 name|||password|||0
-opa|||parola|||0
-sadsadasda|||dasdadadasdada|||0
-
-user22|||parolata123|||0
 user|||12345678|||0
+aaaa|||12345678|||0
+bbbb|||12345678|||0
+cccc|||12345678|||0
+dddd|||12345678|||0
